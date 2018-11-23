@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login Page</title>
+<script type="text/javascript" src="script/validator.js"></script>
+</head>
+<body>
+	<form name="f1" action="../LoginServlet" method="post"
+		onsubmit="return validate()">
+		<h1 align="center">Bus Portal</h1>
+		<hr>
+		<div>
+			<div>
+				<div>
+					<form name="f1" action="../LoginServlet" method="post">
+						<table border= 2 align="center">
+							<tr>
+								<td><b>User Name</b></td>
+								<td><input type="text" placeholder="Username" name="username"></td>
+							</tr>
+							<tr>
+								<td><b>Password</b></td>
+								<td><input type="password" placeholder="Password" name="userpassword"></td>
+							</tr>
+							<tr>
+								<th colspan="2"><input type="submit" value="Login" name="login"></th>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

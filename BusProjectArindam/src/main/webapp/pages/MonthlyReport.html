@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Monthly Report</title>
+</head>
+<body>
+	<form action="../MonthlyReportServlet" method="post">
+		<table border= 1 align="center">
+			<tr>
+			<th colspan="2"><b>Monthly Report<b></th>
+			</tr>
+			<tr>
+				<td>From Date:</td>
+				<td><input type="date" name="fdate"></td>
+			</tr>
+			<tr>
+				<td>To Date:</td>
+				<td><input type="date" name="tdate"></td>
+			</tr>
+			<tr>
+			<th colspan="2"><input type="submit"name="generate" value="Generate"></th>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
