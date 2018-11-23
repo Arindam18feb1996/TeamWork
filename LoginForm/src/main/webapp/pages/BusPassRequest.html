@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+	body{
+		font-family: sans-serif;
+		font-size: 90%;
+		font-weight: bold;
+		background-color: #81d4fa;
+	}
+	#content{
+		border: 3px solid black;
+		width: 500px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		margin-left: 410px;
+		border-radius: 30px;
+		background-color: lightgreen;
+	}
+	#finalbutton{
+		background-color: #bdbdbd;
+		border: none;
+		width: 100px;
+		height: 40px;
+		border-radius: 10px;
+	}
+	input{
+		border-radius: 5px;
+		border: none;
+		height: 30px;
+	}
+</style>
+</head>
+<body>
+<form action="../PassRequestServlet" method="post">
+<h2 align="center"> Bus Pass Request Form</h2>
+<div id="content" align="center">
+<table>
+	<tr>
+		<td>Employee Id :</td>
+		<td><input type ="text" name ="EmployeeId"></td>
+	</tr>
+	<tr>
+		<td>First Name : </td>
+		<td><input type  ="text" name="firstName"></td>
+	</tr>
+	<tr>
+		<td>Last name : </td>
+		<td><input type ="text" name ="lastName"></td>
+	</tr>
+	<tr>
+		<td>Gender: </td>
+		<td> <input type="radio" name="gender" value="male"> Male
+ 		 <input type="radio" name="gender" value="female"> Female
+ 		 <input type="radio" name="gender" value="other"> Other  </td>
+	</tr>
+	<tr>
+		<td>Designation: </td>
+		<td><select name ="Designation">
+		<option value="NUll">Select</option>
+		  <option value="Software Engineer">Software Engineer</option>
+		<option value="SrSoftware Engineer">SrSoftware Engineer</option>
+ 		 <option value="Manager">Manager</option>
+		</select></td>
+		
+	</tr>
+	<tr>
+	
+		<td>Address: </td>
+		<td><textarea rows="4" cols="40" name="address"></textarea></td>
+		
+	</tr>
+	<tr>
+	<td>Date of Journey: </td>
+		<td><input type ="date" name= "dateOfJoining"></td>
+	</tr>
+	<tr>
+		<td>Locations: </td>
+		<td><select name ="location">
+		<option value="NUll">Select</option>
+		  <option value="Chennai-MIPL">Chennai-MIPL</option>
+		<option value="Chennai-Sipcot">Chennai-Sipcot</option>
+ 		 <option value="Chennai-Pct">Chennai-Pct</option>
+		</select></td>
+		
+	</tr>
+	<tr>
+		<td>Pick up location</td>
+		<td><select name="pickuplocation">
+		<option value="Tambaram">Tambaram</option>
+		<option value="Parnur">Parnur</option>
+		<option value="Karapakam">karapakam</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td>Pick up time: </td>
+		<td><input type ="time" name="pickUpTime"></td>
+	</tr>
+	<!-- <tr>
+		<td>drop location</td>
+		<td><select>
+		<option value="NUll">Select</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td>Drop Time :</td>
+		<td><input type ="time" name="dropTime"></td>
+		
+	</tr> -->
+	
+	<tr>
+		<td></td>
+		<td><input id="finalbutton" type="Submit" value="Sumbit"></td>
+	</tr>
+	
+
+
+
+
+
+</table>
+</div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+body {
+	font-family: sans-serif;
+}
+a{
+	text-decoration: none;
+	width: 200px;
+	height: 100px;
+	background-color: green;
+}
+li{
+	list-style-type: none;
+	width: 200px;
+	height: 60px;
+	background-color: lightblue;
+	text-align: center;
+	line-height: 50px;
+}
+
+#sas {
+	display: flex;
+	flex-direction: column;
+}
+
+.anchor {
+	background-color: lightblue;
+	border: none;
+	width: 200px;
+	height: 60px;
+	padding: 10px;
+	
+}
+#container{
+	height: 160px;
+	width: 100px;
+	background-color: ;
+	float: left;
+	flex-direction: column;
+}
+#container1{
+	height: 300px;
+	width: 850px;
+	background-color: lightgreen;
+	float: left;
+	margin-left: 190px;
+}
+.children{
+	height: 30px;
+	width: 180px;
+}
+a{
+	width: 200px;
+	height: 60px;
+	background-color: lightblue;
+}
+</style>
+</head>
+<body>
+	<form name="f1" action="LoginServlet" method="post"
+		onsubmit="return validate()">
+		<h1 align="center">Online Bus Booking</h1>
+		<hr>
+		
+		<marquee behavior="scroll" direction="right">
+      		<img src="bus.jpg" width="100px" />
+    	</marquee>
+
+		<div id="container">
+			<!-- <div class="children">
+				<a class="anchor" href=#>Pending</a>
+				<a class="anchor" href=#>Accept Requests</a>
+				<a class="anchor" href=#>Ref</a>
+				<a class="anchor" href=#>Ref</a>
+			</div> -->
+			
+			<ul>
+				<li><a href="#">Pending</a></li>
+				<li><a href="AddBus.html" target="f1">Add Route Details</a></li>
+				<li><a href="#">Reject Request</a></li>
+				<li><a href="../BusRouteServlet" target="f1">View Routes</a></li>
+			</ul>
+			
+		</div>
+		
+		<iframe name="f1" id="container1"  style="border:2px solid red;"></iframe>
+		
+	</form>
+</body>
+</html>

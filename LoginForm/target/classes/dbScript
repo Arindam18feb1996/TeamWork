@@ -1,0 +1,26 @@
+create database ravi;
+
+create table adminLogin(userid int primary key auto_increment)
+
+
+
+create table BusPassRequest(requestId int primary key auto_increment,EmployeeId varchar(10),
+firstname varchar(20),lastname varchar(20),gender varchar(6),address varchar(100),email varchar(100),
+dateofjoin date,location varchar(100),pickuploc varchar(20),pickuptime time,status varchar(10),Designation varchar(15));
+
+
+"insert into BusPassRequest(EmployeeId,firstname,lastname,gender,address,dateofjoin,location,pickuploc,pickuptime,status,email,designation)values(?,?,?,?,?,?,?,?,?,?,?,?)";
+
+
+create table route(route_id int primary key auto_increment,route_path varchar(225),  routename varchar(20) not null,occupiedseats 
+  int,total_seats int,bus_no varchar(10),driver_name varchar(20),total_km int); 
+
+  
+
+insert into route_table(route_path,occupiedseats,total_seats,bus_no,driver_name,total_km) values('Chennai-MIPL,Tambaram,Parnur',10,35,'1A','John',45); 
+ 
+ 
+
+insert into route(route_path ,  routename ,occupiedseats,total_seats,bus_no,driver_name,total_km)
+values('Chennai-MIPL,paranur,singaperumallu koil,vandalur,thambaram','MIPL-Thambaram',20,60,'TN-5623','john',50);
+ 

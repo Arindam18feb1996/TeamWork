@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<title>Login page</title>
+<link href="styles/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="scripts/Validation.js"></script>
+</HEAD>
+<Body align="center">
+<form name="f1" action="LoginServlet" method="post" onsubmit="return validate()">
+<div id="body">
+	<table>
+		<div id="head1">
+			<tr>
+				<td></td>
+				<td><h3>Login Page</h3></td>
+			</tr>
+			<tr>
+				<td>User Name: </td>
+				<td><input type="text" name="userName"></td>
+				<div id="userErrMsg" class="errMsg"></div>
+			</tr>
+			<tr>
+				<td>Password: </td>
+				<td><input type="password" name="userPwd"><td>
+				<td>
+					<div id="pwdErrMsg" class="errMsg"></div>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;"><input type="submit" name="Login" value="Submit"></td>
+			</tr>
+		</div>
+	</table>
+</div>
+<div id="image"><image src="images/shopping.jpg"></div>
+<p>To Request For route please<a href="pages/BusPassRequest.html">click here</a>
+</form>
+</Body>
+</HTML>
